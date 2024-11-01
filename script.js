@@ -1688,7 +1688,7 @@ function generateBoxes(rotate = false, rotateIndividual = false) {
                 break;
             case 6:
                 //drippingLife(group, boxWidth, boxHeight, boxWidth * 0.3, boxHeight * 0.4, true);
-                if (boxWidth > 150) {
+                if (boxWidth > 150 && boxHeight > 100) {
                     talkTitle(group, boxWidth, boxHeight)
                     pulsatingDot(group, boxWidth, boxHeight)
                     pulsatingDot(group, boxWidth, boxHeight, boxWidth/2-16)
@@ -1782,6 +1782,6 @@ function resetPage() {
 }
 
 // Set a timeout to reset the page every 5 minutes (300,000 milliseconds)
-setTimeout(resetPage, 2000);
+setTimeout(resetPage, 5000);
 // setTimeout(resetPage, 1000);
 
