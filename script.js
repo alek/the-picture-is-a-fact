@@ -1782,6 +1782,6 @@ function resetPage() {
 }
 
 // Set a timeout to reset the page every 5 minutes (300,000 milliseconds)
-setTimeout(resetPage, 6000);
+setTimeout(resetPage, 2000);
 // setTimeout(resetPage, 1000);
 
